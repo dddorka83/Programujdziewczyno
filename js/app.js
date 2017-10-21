@@ -30,18 +30,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     // buttons[0].addEventListener('click', showHide);
     
-     for (var i = 0; i <= buttons.length; i++) {
+    for (var i=0; i<buttons.length; i++){
         buttons[i].addEventListener('click', showHide);
     }
     
+        //zadanie 3
+    var navigation = document.querySelector('nav.navbar');
     
-     
-    
+    window.addEventListener('scroll', function() {
+    navigation.style.borderBottom = '2px solid #000';                           
+    });
 });
-
-
-
-
-
-
-
